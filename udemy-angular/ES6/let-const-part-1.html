@@ -1,0 +1,29 @@
+<html>
+<body>
+<p>oioioi</p>
+<script>
+
+  //escopos: global, funcao, bloco
+
+  function escopoFuncao() {
+    if (true) {
+      if (true) {
+        var serie = 'gotor'
+      }
+    }
+
+    console.log('funcao: ', serie)
+
+  }
+
+  escopoFuncao()
+
+  console.log('global: ', serie)
+
+  {
+    console.log('global: ', serie)
+  }
+
+</script>
+</body>
+</html>
